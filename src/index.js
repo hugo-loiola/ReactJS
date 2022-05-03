@@ -1,6 +1,15 @@
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom";
+import Primeiro from "./components/basicos/Primeiro";
+import Componente from "./components/basicos/Componente";
 
-const tag = <strong>Olá React</strong>;
-
-ReactDOM.render(<div>{tag}</div>, document.getElementById("root"));
+ReactDOM.render(
+	<div id="app">
+		<Primeiro/>
+		<Componente 
+			name= "Hugo" 
+			nota= {9.0} />
+	</div>,
+	document.getElementById("root")
+);
