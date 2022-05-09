@@ -13,15 +13,15 @@ const App = () => {
 
 			<div className="Cards">
 
-				<Card titulo="#04 - Desafio Aleatório">
-					<Aleatorio max={10} min={1} />
+				<Card titulo="#04 - Desafio Aleatório" color='#080' >
+					<Aleatorio max={500} min={1} />
 				</Card>
 
-				<Card titulo="#03 - Fragmento">
+				<Card titulo="#03 - Fragmento" color='#080'>
 					<Fragmento></Fragmento>
 				</Card>
 
-				<Card titulo="#02 - Com Parametros">
+				<Card titulo="#02 - Com Parametros" color='#080'>
 					<Componente titulo="Notas" aluno="Hugo" nota={6.8} />
 				</Card>
 
