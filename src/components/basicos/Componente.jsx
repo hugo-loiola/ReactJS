@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
 const Componente = (props) => {
-	const status = props.nota >= 5 ? 'Aprovado' : 'Reprovado'
+	const status = props.nota >= 5 ? "Aprovado" : "Reprovado";
 	return (
 		<div>
 			<h1>{props.titulo}</h1>
