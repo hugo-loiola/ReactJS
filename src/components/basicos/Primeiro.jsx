@@ -1,9 +1,10 @@
 import React from "react";
-export default function Primeiro() {
-	const menssagem ="seja bem vindo";
+const Primeiro = () => {
 	return (
 		<div>
 			<h2>Primeiro Componente</h2>
-			<p>{menssagem}</p>
+			<p>Olá</p>
 		</div>);
-} 
+};
+
+export default Primeiro;

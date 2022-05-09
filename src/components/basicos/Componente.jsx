@@ -1,12 +1,13 @@
 import React from "react";
 
-function Componente(props) {
+const Componente = (props) => {
+	const status = props.nota >= 5 ? 'Aprovado' : 'Reprovado'
 	return (
 		<div>
-			<h2>Olá, {props.name}</h2>
-			<h3>{props.name} tem nota {props.nota}</h3>
+			<h1>{props.titulo}</h1>
+			<h2>{props.aluno} tem nota {props.nota} e está {status} </h2>
 		</div>
 	);
-}
+};
 
 export default Componente;
