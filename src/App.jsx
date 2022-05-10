@@ -8,6 +8,7 @@ import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repetição/ListaAlunos";
+import TabelaProdutos from "./components/repetição/TabelaProdutos";
 
 
 const App = () => {
@@ -16,8 +17,13 @@ const App = () => {
 			<h1>Fundamentos React</h1>
 
 			<div className="Cards">
+
+				<Card titulo="#07 - Desafio Repetição" color="#6495ED">
+					<TabelaProdutos/>
+				</Card>
+
 				<Card titulo="#06 - Repetição" color="#ff4c65">
-					<ListaAlunos></ListaAlunos>
+					<ListaAlunos/>
 				</Card>
 
 				<Card titulo="#05 - Componente com Filhos" color='#DE3163' >
