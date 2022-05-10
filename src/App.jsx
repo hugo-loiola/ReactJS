@@ -6,6 +6,8 @@ import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
+
 
 const App = () => {
 	return (
@@ -15,7 +17,11 @@ const App = () => {
 			<div className="Cards">
 
 				<Card titulo="#05 - Componente com Filhos" color='#DE3163' >
-					<Familia sobrenome="Loiola"/>
+					<Familia sobrenome="Loiola">
+						<FamiliaMembro nome="Hugo"/>
+						<FamiliaMembro nome="Hugo"/>
+						<FamiliaMembro nome="Hugo"/>
+					</Familia>
 				</Card>
 
 				<Card titulo="#04 - Desafio Aleatório" color='#40E0D0' >
