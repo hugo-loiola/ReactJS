@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+
 import Primeiro from "./components/basicos/Primeiro";
 import Componente from "./components/basicos/Componente";
 import Fragmento from "./components/basicos/Fragmento";
@@ -9,6 +10,8 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repetição/ListaAlunos";
 import TabelaProdutos from "./components/repetição/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParouImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 
 const App = () => {
@@ -18,19 +21,24 @@ const App = () => {
 
 			<div className="Cards">
 
+				<Card titulo={"#08 - Condicional"} color="#982395" >
+					<ParOuImpar numero={1} ></ParOuImpar>
+					<UsuarioInfo usuario={{ nome: "Hugo" }}></UsuarioInfo>
+				</Card>
+
 				<Card titulo="#07 - Desafio Repetição" color="#6495ED">
-					<TabelaProdutos/>
+					<TabelaProdutos />
 				</Card>
 
 				<Card titulo="#06 - Repetição" color="#ff4c65">
-					<ListaAlunos/>
+					<ListaAlunos />
 				</Card>
 
 				<Card titulo="#05 - Componente com Filhos" color='#DE3163' >
 					<Familia sobrenome="Loiola">
-						<FamiliaMembro nome="Hugo"/>
-						<FamiliaMembro nome="Luísa"/>
-						<FamiliaMembro nome="Arroba"/>
+						<FamiliaMembro nome="Hugo" />
+						<FamiliaMembro nome="Luísa" />
+						<FamiliaMembro nome="Arroba" />
 					</Familia>
 				</Card>
 
