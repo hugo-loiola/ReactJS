@@ -12,6 +12,10 @@ import ListaAlunos from "./components/repetição/ListaAlunos";
 import TabelaProdutos from "./components/repetição/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParouImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
 
 const App = () => {
@@ -21,9 +25,25 @@ const App = () => {
 
 			<div className="Cards">
 
+				<Card titulo='#12 - Contador' color='#424242'>
+					<Contador numeroInicial={0}></Contador>
+				</Card>
+
+				<Card titulo='#11 - Componente Controlado'>
+					<Input></Input>
+				</Card>
+
+				<Card titulo='#10 - Comunicação Indireta' color='#511515'>
+					<IndiretaPai></IndiretaPai>
+				</Card>
+
+				<Card titulo='#09 - Comunicação Direta' color='#123456'>
+					<DiretaPai></DiretaPai>
+				</Card>
+
 				<Card titulo={"#08 - Condicional"} color="#982395" >
 					<ParOuImpar numero={1} ></ParOuImpar>
-					<UsuarioInfo usuario={{ nome: "Hugo" }}></UsuarioInfo>
+					<UsuarioInfo usuario={{ nome: "Gostoso" }}></UsuarioInfo>
 				</Card>
 
 				<Card titulo="#07 - Desafio Repetição" color="#6495ED">

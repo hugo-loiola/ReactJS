@@ -1,7 +1,3 @@
-# Olá ReactJS
+# React Js
 
-![logo](./src/assets/code2.png)
-
----
-
-Exemplo de um `hello world` no framework **React**.
+## Base de estudos em react !
