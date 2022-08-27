@@ -1,0 +1,13 @@
+.Mega label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Mega button {
+  padding: 15px;
+  margin: 15px;
+  width: 100px;
+  height: 80px;
+  border-radius: 15%;
+  background-color: aqua;
+  color: azure;
+}
